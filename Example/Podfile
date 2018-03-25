@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HTTPNetworking_Example' do
+  pod 'HTTPNetworking', :path => '../'
+
+  target 'HTTPNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - HTTPNetworking (0.1.0)
+
+DEPENDENCIES:
+  - HTTPNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  HTTPNetworking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HTTPNetworking: db4d5a095d0f64d888d8d4195b01a42b2b225092
+
+PODFILE CHECKSUM: 28b99b81d2d363d4188ed981dbd6154b163cad59
+
+COCOAPODS: 1.4.0

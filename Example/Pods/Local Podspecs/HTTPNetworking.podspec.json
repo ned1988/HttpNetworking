@@ -1,0 +1,22 @@
+{
+  "name": "HTTPNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of HTTPNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ned1988@gmail.com/HTTPNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ned1988@gmail.com": "denys.meloshyn@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ned1988@gmail.com/HTTPNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HTTPNetworking/Classes/**/*"
+}

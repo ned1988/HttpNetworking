@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		143E24D36EE028B01DF6DF30D79F1589 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		143E24D36EE028B01DF6DF30D79F1589 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		149B33FEEE5368E795CAF0B5B8DF2A78 /* Pods-HTTPNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTTPNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
 		173D23D15C9EC7499E89E99E66F09167 /* Pods-HTTPNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTTPNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1879ECAC7D00A2E49BCE064EA126F050 /* Pods-HTTPNetworking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTTPNetworking_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		2210EAEFD8C51854173E89E85E9163D6 /* HTTPNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTTPNetworking.xcconfig; sourceTree = "<group>"; };
 		228F63B23C1122264817253B3C0D8060 /* Pods-HTTPNetworking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTTPNetworking_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2BAD67FD1526AA7DB8CA04FC20C72FC7 /* HTTPNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTTPNetworking-dummy.m"; sourceTree = "<group>"; };
-		2CBF249C30FB65353A50CEDB1D62A8DA /* HTTPNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTTPNetworking.framework; path = HTTPNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBF249C30FB65353A50CEDB1D62A8DA /* HTTPNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3941B0CEB7B4E946FD53D7D72432F7F1 /* HTTPNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTTPNetworking.modulemap; sourceTree = "<group>"; };
 		3BDE1787125D543A81F8DE2DAC37A853 /* Pods-HTTPNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTTPNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3FC0E0FE550740173241790869B6BB03 /* Pods-HTTPNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTTPNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,19 +51,19 @@
 		6793F3A2871681A62947D3F36AE251C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD1F66466A1F9688E8CDE3E02B2B53C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7ECBB3882FC327F5214776F776BD11 /* HTTPNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworking.swift; path = HTTPNetworking/Classes/HTTPNetworking.swift; sourceTree = "<group>"; };
-		6E4CFEE8C579B7B72F30B5F7BFB1263D /* HTTPNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HTTPNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E4CFEE8C579B7B72F30B5F7BFB1263D /* HTTPNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HTTPNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6FCC4E12CD7E51AD46691C1E302000CA /* Pods-HTTPNetworking_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTTPNetworking_Tests-resources.sh"; sourceTree = "<group>"; };
-		8E09D5E9B8842BA0A6E57BDA2B1C4B72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8E09D5E9B8842BA0A6E57BDA2B1C4B72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9219503966576E643AE164E7C1C177EC /* Pods-HTTPNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HTTPNetworking_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AF8B3E5752009B57412271C0168752C /* Pods-HTTPNetworking_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTTPNetworking_Example-resources.sh"; sourceTree = "<group>"; };
 		BA1D945F8BA9AB9C3992098AC6AA4F7A /* HTTPNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPNetworking-prefix.pch"; sourceTree = "<group>"; };
 		C76713C96C13158F4E4C59FD29B84C84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E15C8D767FA05E37E5C2A47DE0CA11 /* Pods-HTTPNetworking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTTPNetworking_Example-dummy.m"; sourceTree = "<group>"; };
 		EE446383A85E3D7DD615ECA82551672F /* Pods-HTTPNetworking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTTPNetworking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF5AFF355E142A950D6EC237D8CDD5AA /* Pods-HTTPNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTTPNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F0F4C8EF21722D00BF45EC8B2FDDEF48 /* Pods_HTTPNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HTTPNetworking_Example.framework; path = "Pods-HTTPNetworking_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC5BE0FE994639562DD0939FB940DA50 /* Pods_HTTPNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HTTPNetworking_Tests.framework; path = "Pods-HTTPNetworking_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F4C8EF21722D00BF45EC8B2FDDEF48 /* Pods_HTTPNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTPNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5BE0FE994639562DD0939FB940DA50 /* Pods_HTTPNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTPNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF668E36C7BA694C5DF40BDD4A87B79C /* Pods-HTTPNetworking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HTTPNetworking_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,7 +309,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -649,6 +649,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

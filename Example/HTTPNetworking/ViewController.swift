@@ -10,16 +10,18 @@ import UIKit
 import HTTPNetworking
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "https://api.github.com/users/ned1988")!
+        let request = URLRequest(url: url)
+        HTTPNetwork.instance.load(request) { (data, response, error) in
+            print("Data: \(String(describing: data)), response: \(String(describing: response)), \(String(describing: error))")
+        }
+        
+        HTTPNetwork.instance.loadJSON(request) { (data, response, error) in
+            print("Data: \(String(describing: data)), response: \(String(describing: response)), \(String(describing: error))")
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

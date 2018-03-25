@@ -7,17 +7,17 @@
 
 import Foundation
 
-typealias HTTPCompletionBlock = (Data?, HTTPURLResponse?, Error?) -> Void
-typealias HTTPJSONCompletionBlock = (Any?, HTTPURLResponse?, Error?) -> Void
+public typealias HTTPCompletionBlock = (Data?, HTTPURLResponse?, Error?) -> Void
+public typealias HTTPJSONCompletionBlock = (Any?, HTTPURLResponse?, Error?) -> Void
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case GET
     case POST
     case PUT
     case DELETE
 }
 
-extension URLRequest {
+public extension URLRequest {
     var method: HTTPMethod? {
         set {
             httpMethod = newValue?.rawValue
@@ -28,7 +28,16 @@ extension URLRequest {
     }
 }
 
-protocol HTTPProtocol {
+public extension URLComponents {
+    static func httpsComponents() -> URLComponents {
+        var components = URLComponents()
+        components.scheme = "https"
+        
+        return components
+    }
+}
+
+public protocol HTTPProtocol {
     @discardableResult func load(_ request: URLRequest, completion: HTTPCompletionBlock?) -> URLSessionDataTask
     @discardableResult func load(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPCompletionBlock?) -> URLSessionDataTask
     
@@ -36,20 +45,20 @@ protocol HTTPProtocol {
     @discardableResult func loadJSON(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPJSONCompletionBlock?) -> URLSessionDataTask
 }
 
-class HTTPNetwork: HTTPProtocol {
-    static let instance = HTTPNetwork()
+public class HTTPNetwork: HTTPProtocol {
+    public static let instance = HTTPNetwork()
     
     private let session: URLSession
     
-    init(session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+    public init(session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
         self.session = session
     }
     
-    @discardableResult func load(_ request: URLRequest, completion: HTTPCompletionBlock?) -> URLSessionDataTask {
+    @discardableResult public func load(_ request: URLRequest, completion: HTTPCompletionBlock?) -> URLSessionDataTask {
         return load(request, executeCompletionBlockInMainThread: true, completion: completion)
     }
     
-    @discardableResult func load(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPCompletionBlock?) -> URLSessionDataTask {
+    @discardableResult public func load(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPCompletionBlock?) -> URLSessionDataTask {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         
@@ -69,11 +78,11 @@ class HTTPNetwork: HTTPProtocol {
         return task
     }
     
-    @discardableResult func loadJSON(_ request: URLRequest, completion: HTTPJSONCompletionBlock?) -> URLSessionDataTask {
+    @discardableResult public func loadJSON(_ request: URLRequest, completion: HTTPJSONCompletionBlock?) -> URLSessionDataTask {
         return loadJSON(request, executeCompletionBlockInMainThread: true, completion: completion)
     }
     
-    @discardableResult func loadJSON(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPJSONCompletionBlock?) -> URLSessionDataTask {
+    @discardableResult public func loadJSON(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPJSONCompletionBlock?) -> URLSessionDataTask {
         return load(request, executeCompletionBlockInMainThread: executeCompletionBlockInMainThread) { data, response, error in
             if error != nil {
                 if executeCompletionBlockInMainThread {

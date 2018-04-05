@@ -59,9 +59,6 @@ public class HTTPNetwork: HTTPProtocol {
     }
     
     @discardableResult public func load(_ request: URLRequest, executeCompletionBlockInMainThread: Bool, completion: HTTPCompletionBlock?) -> URLSessionDataTask {
-        let sessionConfig = URLSessionConfiguration.default
-        let session = URLSession(configuration: sessionConfig)
-        
         let completionResponseBlock = { (data: Data?, response: URLResponse?, error: Error?) -> Void in
             if executeCompletionBlockInMainThread {
                 DispatchQueue.main.async {
